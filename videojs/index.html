@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Video.js player</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/6-unsafe/video-js.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext">
+  
+  
+    <link rel="stylesheet" href="./css/main.css">
+    
+  
+</head>
+<body id="index">
+
+  <input id="urlid" type="search" placeholder="Enter url"></input>
+  <input type="button" value="Load" onclick="load()"></input>
+  
+  <section class="main-preview-player">
+
+  <video id="preview-player" class="video-js vjs-fluid placeholder" controls preload="auto" data-setup='{ "inactivityTimeout": 0 }' >
+   
+    <source src="" type="video/mp4"> </source>
+ 
+  </video>
+ 
+</section>
+
+
+  
+
+
+    <script src="./js/video.js"></script>  
+    <script src="https://mux-sdks-test.s3.amazonaws.com/videojs/0/videojs-mux.js"></script>  
+    <script src="./js/home.js"></script>  
+
+    <script src="https://cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
+    <script src="./js/main.js"></script> 
+</body>
+</html>
